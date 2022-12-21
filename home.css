@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height:60px;
+    background-color: black;
+    /* box-shadow:2px 2px 12px rgba(0,0,0,0.2); */
+    padding:0px 5%;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    padding-top: .8em;
+}
+  
+nav ul li a{
+    margin:40px;
+    font-family: 'Oswald';
+    color: rgb(239, 239, 239);
+    font-size: 16px;
+    font-weight:bold;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.logo{
+    font-family:'Lobster';
+    color:rgb(239, 239, 239);
+    font-size: 22px;
+    font-weight: bold;
+    transform: rotate(-360deg);
+    transition-duration: 1000ms;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+    transition-duration: 1000ms;
+    color: white;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+}
+
+.column1 {
+    width: 70vw;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 1px solid rgb(211, 211, 211);
+}
+
+.box {
+    margin: auto;
+    width: 60vw;
+    height: 100%;
+}
+
+.categories {
+    width: 42vw;
+    height: 4em;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    display: flex;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    margin-top: 3em;
+}
+
+.categories button {
+    padding: .5em;
+    margin-right: .7em;
+    font-size: .9em;
+    background-color: transparent;
+    border: none;
+    color: rgb(131, 127, 127);
+}
+
+.categories button:hover {
+    color: black;
+}
+
+.items {
+    margin-top: 2em;
+    height: 18em;
+    display: flex;
+    border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.pictArt {
+    margin: 2em 1em 1em 6em;
+    width: 8em;
+    height: 8em;
+    background-image: url(download.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.profile {
+    display: flex;
+    margin: auto;
+}
+
+.name {
+    margin-left: 0.5em;
+}
+
+.img {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    border-radius: 50%;
+    /* margin-top: .1em; */
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.date {
+    margin-left: .5em;
+}
+
+.articles {
+    width: 42vw;
+    margin-top: 1em;
+}
+
+.content {
+    width: 100%;
+}
+
+.content p {
+    font-family: 'Poppins';
+    font-size: .9em;
+}
+
+.bottom {
+    margin-top: 4em;
+    display: flex;
+    width: 42vw;
+    justify-content: space-between;
+}
+
+.button button {
+    font-size: .92em;
+    border: none;
+    width: 4em;
+    padding: .2em;
+    border-radius: 13px;
+}
+
+.attributes .a {
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.save {
+    background: url('https://api.iconify.design/material-symbols/bookmark-add-outline.svg') no-repeat center center;
+}
+
+.column2 {
+    width: 30vw;
+}
+
+.button-left {
+    margin: 2.7em 2.7em 2.7em 5em;
+}
+
+.button-left button {
+    width: 25em;
+    border: none;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    padding: .5em;
+    border-radius: 2em;
+}
+
+.button-left button:hover {
+    background-color: black;
+}
+
+.review {
+    width: 25em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.topicRev {
+    margin-top: 1em;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+.profRev {
+    display: flex;
+}
+
+.imgRev {
+    width: 22px;
+    height: 22px;
+    overflow: hidden;
+    border-radius: 50%;
+    /* margin-top: .1em; */
+}
+
+.imgRev img {
+    width: 100%;
+    height: auto;
+}
+
+.nameRev {
+    margin-left: .5em;
+}
+
+.titleRev {
+    margin-top: .5em;
+}
+
+.recom {
+    margin-top: 2em;
+    width: 25em;
+}
+
+.wr {
+    margin-left: 5em;
+}
+
+.buttonRec button {
+    margin-top: 1em;
+    margin-right: .5em;
+    font-size: .89em;
+    padding: .8em;
+    background-color: rgb(242, 242, 242);
+    border: none;
+    border-radius: 5em;
+}
+
+.buttonRec button:hover {
+    background-color: rgb(206, 206, 206);
+}
+
+.follow {
+    margin-top: 2em;
+    width: 25em;
+}
+
+.profFoll {
+    display: flex;
+    margin-top: 1em;
+}
+
+.imgFoll {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    /* margin-top: .1em; */
+}
+
+.imgFoll img {
+    width: 100%;
+    height: auto;
+}
+
+.buttonFoll {
+    margin: .8em .8em .8em 1.5em;
+}
+
+.buttonFoll button {
+    width: 5.5em;
+    background-color: transparent;
+    border: 1px solid rgb(165, 165, 165);
+    font-size: .88em;
+    padding: .4em;
+    border-radius: 5em;
+}
+
+.buttonFoll button:hover {
+    border: 1px solid black;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1366px) {
+    .column1 {
+        width: 70vw;
+    }
+
+    /* .column2 {
+        width: 20vw;
+    } */
+
+    .button-left {
+        margin-left: 3em;
+    }
+
+    .button-left button {
+        width: 20em;
+    }
+
+    .wr {
+        margin-left: 3em;
+    }
+
+    .review {
+        width: 20em;
+        margin-left: 0;
+    }
+
+    .recom {
+        width: 20em;
+    }
+
+    .follow {
+        width: 20em;
+        margin-top: 3em;
+    }
+
+    .headerFoll {
+        margin-bottom: 2em;
+    }
+
+    .categories {
+        width: 42vw;
+        overflow: auto;
+    }
+
+    .categories button {
+        /* width: 10em; */
+        padding: 1em;
+        /* background-color: red; */
+        margin-right: 2em;
+        font-size: .8em;
+    }
+
+    .bottom {
+        margin-top: 2.5em;
+    }
+}
