@@ -6,18 +6,21 @@ body {
 }
 
 .wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
 }
 
 .left {
-    width: 50vw;
-    height: 51.25vw;
+    width: 50%;
+    height: 100%;
 }
 
 .box {
     width: 40vw;
     padding: 5em 5em 7em 5em;
-    margin: 10em 5em 0 5em;
+    margin: 6em 5em 0 5em;
     border: 1px solid rgb(205, 205, 205);
     border-radius: 3em;
     box-sizing: border-box;
@@ -25,27 +28,27 @@ body {
 }
 
 .right {
-    width: 50vw;
-    height: 51.25vw;
+    width: 50%;
+    height: 100%;
 }
 
 .right img {
-    margin: 10em 0em 0em 5em;
+    margin: 5em 0em 0em 0em;
 }
 
 @media only screen and (max-width: 1366px) {
     .left {
         width: 50vw;
-        height: 56.2vw;
+        height: 50.85vw;
     }
     
     .right {
         width: 50vw;
-        height: 56.2vw;
+        height: 50.85vw;
     }
 
     .box {
-        margin: 5em 5em 0 4em;
+        margin: 2.5em 5em 0 4em;
     }
 
     .right img {
@@ -53,4 +56,7 @@ body {
         height: auto;
     }
 
+    .right img {
+        margin: 7em 0em 0em 5em;
+    }
 }

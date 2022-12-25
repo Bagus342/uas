@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://kit.fontawesome.com/22baba14d4.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="profile.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Info</title>
@@ -13,22 +14,82 @@
     <a href="Indeks.html" class="logo">Info</a>
     <!--- menu --->
     <ul>
-        <li><a href="blog.html" class="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li class="bb"><a class="b" href="blog.html">Home</a></li>
+        <li class="bb"><a class="b" href="#">About</a></li>
+        <li class="bb"><a class="b" href="#">Service</a></li>
+        <li class="bb"><a class="b" href="#">Contact</a></li>
+        <li class="bb">
+            <button 
+              type="button" 
+              aria-haspopup="true" 
+              aria-expanded="true" 
+              aria-controls="dropdown1"
+            >
+              <span class="fa-solid fa-user-tie"></span><span class="fa-solid fa-chevron-down arrow"></span>   
+            </button>
+            <ul class="dropdown" id="dropdown1">
+              <li><a class="a" href="user_profile.html">User Profile</a></li> 
+              <li><a class="a" href="Indeks.html">Logout</a></li>
+            </ul>
+          </li>
     </ul>
-    </nav>  
+</nav>
     <div class="wrapper">
       <div class="left">
         <div class="header">
           <h1 style="font-family: 'Poppins';">Aditya Tamrin</h1>
-          <div class="fa-solid fa-ellipsis"></div>
+          <i class="fa-solid fa-ellipsis"></i>
         </div>
+        <div class="headCont">
+          <button style="border-bottom: 1px solid black; font-weight: bold; color: black;">Home</button>
+          <button>About</button>
+        </div>
+          <div class="cont">
+            <div class="leftCont">
+              <div class="headerCont">
+                <div class="profileCont">
+                    <div class="date">
+                      <span style="font-family: Poppins; color: rgb(120, 120, 120);">Des 07</span>
+                    </div>
+                </div>
+              </div>
+              <div class="articles">
+                <div class="title">
+                  <h2 style="font-family: Poppins; font-weight: bold;">The Hidden Cost of High Salaries in Tech</h2>
+                </div>
+                <div class="contentMed">
+                  <p>Giving chase sometimes ain’t worth it Read an article about median tech salaries?
+                     Visited Levels FYI and compared high values of Microsoft and Amazon salaries for data engineers?
+                     Saw a blog on Medium about a $30k signing bonus? You get the idea. Tech employment is extremely lucrative, especially if you…
+                  </p>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="button">
+                  <i class="fa-regular fa-heart" style="color: gray; cursor: no-drop;"></i>
+                  <i class="fa-regular fa-comment" style="cursor: pointer;"></i>
+                </div>
+                <div class="attributes">
+                  <i class="fa-regular fa-bookmark a" style="font-size: 1.25em;"></i>
+                  <i class="fa-solid fa-ellipsis a" style="font-size: 1.25em;"></i>
+                </div>
+              </div>
+            </div>
+            <div class="pictArt">
+            </div>
+          </div>
       </div>
       <div class="right">
-
+          <button>Get Vip Access</button>
+          <div class="profRight">
+            <div class="pictProf">
+              <img src="sample.jpeg" alt="">
+            </div>
+            <div class="text">
+              <span style="font-family: 'Poppins'; font-weight: bold; text-align: center;">Aditya Tamrim</span>
+              <p style="font-family: 'Poppins'; color: rgb(77, 77, 77); font-size: .9em;">Aku bisa mengatasi kesendirian ini</p>
+            </div>
+          </div>
       </div>
     </div>
 </body>

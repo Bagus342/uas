@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 * {
   margin: 0;
+  padding: 0;
   text-decoration: none;
   list-style: none;
 }
@@ -21,19 +22,87 @@ nav{
 
 nav ul{
   display: flex;
-  padding-top: .1em;
 }
 
-nav ul li a{
-  margin:40px;
+ul li button {
+  font-size: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+  margin-top: .3rem;
+}
+
+.arrow {
+  margin-left: .2em;
+  display: inline-block;
+  transition: transform 100ms ease-in-out;
+}
+
+.dropdown {
+  padding: 2px 1.2rem;
+  height: 0;
+  overflow: hidden;
+  transition: height ease 0.2s;
+  margin-top: 1.2rem;
+  display: block;
+  position: absolute;
+}
+
+.dropdown a {
+  color: black;
+}
+
+ul li .a {
+  display: block;
+  padding: .5rem;
+  margin-top: .2em;
+  font-family: 'Poppins';
+  transition: background-color ease .5s;
+}
+
+ul li .a:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+@media (min-width: 640px) {
+  .dropdown {
+      position: absolute;
+      right: 3rem;
+      left: auto;
+      box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
+      0 4px 6px -2px rgba(71, 63, 79, 0.16);
+      /* z-index: 99; */
+      min-width: 10rem;
+      padding: 0;
+      background-color: #fff;
+      border-radius: 0 0 0.5rem 0.5rem; 
+    }
+  
+  ul li:hover .dropdown {
+      height: 100px;
+  }
+
+  ul li:hover > button > .arrow {
+    transform: rotate(180deg);
+ }
+
+}
+
+nav ul li .b{
   font-family: 'Oswald';
   color: rgb(239, 239, 239);
   font-size: 16px;
   font-weight:bold;
 }
 
-nav ul li a:hover {
+nav ul li .b:hover{
   color: white;
+}
+
+nav ul .bb{ 
+  margin:35px 40px 40px 40px;
 }
 
 .logo{
@@ -53,6 +122,7 @@ nav ul li a:hover {
 
 .wrapper {
   display: flex;
+  z-index: -99;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -71,4 +141,131 @@ nav ul li a:hover {
 
 .header {
   display: flex;
+  justify-content: space-between;
+  width: 55vw;
+  margin: 5em 5em 2em 5em;
+}
+
+i {
+  font-size: 1.2em;
+  margin-top: .6em;
+  cursor: pointer;
+}
+
+.headCont {
+  width: 55vw;
+  border-bottom: 1px solid rgb(182, 182, 182);
+  margin: 1em 5em 2em 5em;
+}
+
+.headCont button {
+  background: transparent;
+  border: none;
+  font-family: 'Poppins';
+  padding: .9em;
+  color: rgb(77, 77, 77);
+  margin-right: .5em;
+  cursor: pointer;
+}
+
+.headCont button:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.cont {
+  margin-left: 5em;
+  display: flex;
+}
+
+.profileCont {
+  display: flex;
+  margin: auto;
+}
+
+.articles {
+  width: 42vw;
+  margin-top: 1em;
+}
+
+.contentMed {
+  width: 100%;
+}
+
+.contentMed p {
+  font-family: 'Poppins';
+  font-size: .9em;
+}
+
+.bottom {
+  margin-top: 4em;
+  display: flex;
+  width: 42vw;
+  justify-content: space-between;
+}
+
+.button i {
+  margin-right: .5em;
+}
+
+.attributes .a {
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.wrapCont {
+  display: flex;
+  
+}
+
+.pictArt {
+  margin: 2.5em 0em 0em 4em;
+  width: 8em;
+  height: 8em;
+  background-image: url(download.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.right button {
+  background-color: rgb(21, 21, 21);
+  border: none;
+  color: white;
+  margin: 5em 0em 2em 5em;
+  width: 25em;
+  padding: .8em;
+  border-radius: 5em;
+  font-weight: bold;
+}
+
+.right button:hover {
+  background-color: black;
+}
+
+.profRight {
+  margin-left: auto;
+}
+
+.pictProf {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.pictProf img {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  margin-top: 1em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1366px) {
+  .right button {
+    margin: 5em 0em 2em 3em;
+  }
 }

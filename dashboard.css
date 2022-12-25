@@ -51,11 +51,14 @@ nav ul{
 }
   
 nav ul li a{
-    margin:40px;
     font-family: 'Oswald';
     color: rgb(225, 225, 225);
     font-size: 16px;
     font-weight:bold;
+}
+
+nav ul li {
+    margin:40px;
 }
 
 nav ul li a:hover {
@@ -320,34 +323,6 @@ button:active{
     color: #f44336;
 }
  
-footer p{
-    font-family: calibri;
-}
- 
-footer p:nth-child(1){
-    font-size: 30px;
-    font-weight:bold;
-    color:#FFFFFF;
-    line-height:10px;
-}
- 
-footer p:nth-child(2){
-    font-size: 16px;
-    color:#7e7d7d;
-    width:605px;
-    text-align: center;
-}
- 
-footer{
-    height:300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background-color: #191919;
-}
- 
 .social-icons a{
     width:40px;
     height:40px;
@@ -417,4 +392,80 @@ footer{
 .social i{
     font-size:20px;
     color:#2B2B2B;
+}
+
+footer{
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "open sans";
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+    align-content: center;
+}
+
+.socials a:hover i{
+color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
 }
